@@ -18,6 +18,15 @@ int main(void) {
 		{"샤프",5000,15},
 		{"지우개",500,10}
 	};
+
+	int pnum[5] = {
+		product[0].num * product[0].price,
+		product[1].num * product[1].price,
+		product[2].num * product[2].price,
+		product[3].num * product[3].price,
+		product[4].num * product[4].price,
+
+	};
 	printf_s("===================\n상품의 이름: ");
 	scanf_s("%s", pname, sizeof(pname));
 	for (int i = 0; i < 5; i++) {
